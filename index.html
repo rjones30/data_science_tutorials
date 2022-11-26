@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Head -->
+<head>
+  <meta name="generator" content=
+  "HTML Tidy for HTML5 for Linux version 5.6.0">
+  <meta charset="utf-8">
+  <title>UConn Data Science Tutorials</title>
+  <meta name="viewport" content=
+  "width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="keywords" content="Data Science, iPython examples">
+  <link rel="stylesheet" href=
+  "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link href=
+  "//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
+  rel="stylesheet">
+  <link href=
+  "https://fonts.googleapis.com/icon?family=Material+Icons" rel=
+  "stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
+  <link rel="shortcut icon" type="image/x-icon" href=
+  "ico/favicon.ico">
+  <link href=
+  "https://fonts.googleapis.com/css?family=Open+Sans|Quicksand"
+  rel="stylesheet">
+</head>
+<body data-spy="scroll" data-target="#main-navbar" data-offset="0" style="background-color: #222334;">
+  <!-- Navbar -->
+  <nav id="main-navbar" class=
+  "navbar fixed-top navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#top"><i class=
+      "material-icons">home</i></a> <button class="navbar-toggler"
+      type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label=
+      "Toggle navigation"><span class=
+      "navbar-toggler-icon">&nbsp;</span></button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" style="color: black;" href=
+            "#howto">How to Get Started</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="color: black;" href=
+            "#activities">Activities</a>
+          </li>
+          <!--li class="nav-item">
+            <a class="nav-link" style="color: black;" href=
+            "#about">About</a>
+          </li-->
+          <!--li class="nav-item"><a class="nav-link" style="color: black;" href="#philosophy">Philosophy</a></li-->
+          <!--li class="nav-item">
+            <a class="nav-link" style="color: black;" href=
+            "#faq">FAQ</a>
+          </li-->
+          <li class="nav-item">
+            <a class="nav-link" style="color: black;" href=
+            "#contributors">Contributors</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav><!-- Title content - transparent header -->
+  <div class="header alt vert" id="top">
+    <div class="container">
+      <h1 style="font-size: 48px; text-align: right;">
+      Data<br>
+      Science<br>
+      Tutorials</h1>
+      <div class="header-transparent" style="margin-top: 100px;">
+        <p class="lead" style=
+        "color: white; margin-top: 0px; margin-bottom:0px;">
+        Interact with real-world data, design algorithms that
+        enable scientific discovery.</p><!--p align="right">
+        <a href="https://drive.google.com/open?id=1dKh1axZSlNTBHDpyMF4GZPofSIdDeqR1" target="_blank"class="btn btn-danger">First Activity! Jump in right away!</a></br>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/2000px-Python-logo-notext.svg.png" hspace="100" width="80" height="80" max width="100%" alt="Card image cap">
+        <img class="img.fluid" src="https://colab.research.google.com/img/colab_favicon_256px.png" alt="Card image cap" width="160" hspace="100">
+        <img src="https://donjayamanne.gallerycdn.vsassets.io/extensions/donjayamanne/jupyter/1.1.4/1510251920527/Microsoft.VisualStudio.Services.Icons.Default" width="80" height"80" max width="100%" alt="Card image cap">
+      </p-->
+      </div>
+    </div>
+  </div><!-- How To  -->
+  <div class="featurette" id="howto">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-10">
+          <div class="card bg-dark text-white">
+            <h2 class="card-header text-center"><i class=
+            "material-icons">help_outline</i> How To Use This
+            Website</h2>
+            <div class="card-body">
+              <p>This website presents a selection of challenge
+              problems at varied levels of difficulty, together
+              with the data you need to conduct your
+              investigation.</p>
+              <ul>
+                <li>Click on the links next to any of the
+                individual tutorial activities listed below to
+                download the zipped images containing the tutorial
+                data and ipython (jupyter) notebook prototype.</li>
+                <li>Use a desktop tool to unpack the tutorial image
+                into a directory on your local machine.</li>
+                <li>Choose whether you want to run the notebook
+                inside the jupyter app on your local machine, or
+                make use of an online jupterlab environment, eg.
+                <a href="https://cn410.storrs.hpc.uconn.edu:48000">
+                  UConn Jupyterlab</a> (requires a UConn netid to
+                  sign in) or <a href=
+                  "https://collab.research.google.com">Google
+                  collab</a>.
+                </li>
+                <li>Open the notebook in your chosen jupyter
+                environment and follow the instructions to begin
+                the tutorial. If you are using a remote jupyterlab
+                service like Google collab, you will need to upload
+                the contents of the tutorial image first.</li>
+                <li>Have fun with data!</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card text-center text-white" style=
+  "padding-top: 20px; background-color: #222334;" id="activities">
+    <div class="card-body">
+      ACTIVITIES
+    </div>
+  </div>
+  <div class="card-group card border-danger" style="max-width: 900px; margin: 0 auto;">
+    <div class="card border-danger" style="min-width: 100%;">
+      <div class="card-body">
+        <h5 class="card-title">1. Decoding GPS signals</h5>
+        <p class="card-text">The GPS navigation system employs a constellation of several
+	dozen satellites, all of which transmit continuous signals in the same frequency
+	band. Like having to follow to a dozen simultaneous conversations going on at the
+	same time in a crowded room, the receiver in your cell phone has to pick out and
+	follow the transmission from each individual satellite. It does this using a technique
+	known as "code division multiplexing" (more technically, CDMA) the same technology
+	that is used by the cell phone network in North America. The input data for this
+	tutorial activity consists of a sample digital stream covering several minutes
+	from a GPS receiver. From this one signal, you will learn how to pick out a number
+	of individual satellite signals, identify which satellites they are, and determine
+	the time delay that measures the relative distance between the satellite and the
+	receiver. You will know when you have succeeded when you are able to detect the
+	unique hidden messages embedded in the signals from each satellite!</p>
+	<a href="tutorial_1.zip" target="_blank" class= "btn btn-primary btn-block"
+		style="width:150px;">zip file</a>
+	<a href="tutorial_1.tar.gz" target="_blank" class= "btn btn-secondary btn-block"
+		style="width:150px;">tarball</a>
+      </div>
+    </div>
+    <div class="card card border-danger" style="min-width: 100%;">
+      <div class="card-body">
+        <h5 class="card-title">2. Finding the distance to individual stars</h5>
+        <p class="card-text">One of the landmark achievements of modern astronomy is the
+	ability to measure the immense distances from the earth to individual light sources
+	in the night sky. The key discovery (actually more than one) that enables accurate
+	distances to be determined is the "standard candle" whose intrinsic brightness can
+	be known apart from its apparent brightness in the night sky. A sequence of these
+	standard candles at a succession of scales from nearby to far away is known as the
+	cosmic distance ladder. The first standard candle on the distance ladder is the
+	Cephied variable star, a special type of star whose brightness waxes and dims in
+	an repeating pattern with a period closely related to its intrinsic brightness.
+	The data in this tutorial consists of a table of many known Cephieds, giving both
+	their apparent brightness in the night sky and the intrinsic brightness inferred
+	from their period. Analysis of these data will allow you to discover the fact that
+	the universe is expanding, and measure its present expansion rate known as the
+	Hubble constant.</p>
+	<a href="tutorial_2.zip" target="_blank" class= "btn btn-primary btn-block"
+		style="width:150px;">zip file</a>
+	<a href="tutorial_2.tar.gz" target="_blank" class= "btn btn-secondary btn-block"
+		style="width:150px;">tarball</a>
+      </div>
+    </div>
+    <div class="card card border-danger" style="min-width: 100%;">
+      <div class="card-body">
+        <h5 class="card-title">3. Identifying individual genes in a strand of DNA</h5>
+        <p class="card-text">A gene is a limited section of a longer strand of DNA
+	located in the nucleus of the cell which carries the information needed to
+	synthesize one specific protein. Synthesis of these proteins takes place within
+	the body of the cell through a sequence of steps known as gene expression.
+	Not every cell in a multicellular organism contains a complete set of these
+	proteins because gene expression is regulated depending on the environment
+	during cell division and growth. But all cells with a nucleus contain their
+	own copies of the complete genetic code. This genome determines all of the
+	heritable traits of an individual. To the extent that individual traits can 
+	be mapped to specific genes, it should be possible to come up with a
+	comprehensive description of each individual's traits, including any that may
+	not yet be expressed, by making a catalog of their genes and comparing them
+	to a library of known genes from previously studied individuals.
+        This lookup is complicated by the fact that slight differences often appear in
+	the exact sequence of the same gene within different individuals, something
+	known as an allele. The data in this tutorial consist of a reference library
+	of known genes and a set of unknown alleles that you are tasked with identifying
+	from the library. One of the challenges in this activity is common to many
+	problems in data science, and that is finding expected patterns in a signal
+	that contains a significant amount of noise.</p>
+	<a href="tutorial_3.zip" target="_blank" class= "btn btn-primary btn-block"
+		style="width:150px;">zip file</a>
+	<a href="tutorial_3.tar.gz" target="_blank" class= "btn btn-secondary btn-block"
+		style="width:150px;">tarball</a>
+      </div>
+    </div>
+  </div>
+  <p>&nbsp;</p>
+  <!--div id="about" class="blurb">
+    <div class="container">
+      <h2><i class="material-icons">info</i> About <span class=
+      "brand-color">&nbsp;</small></h2>
+      <div class="row">
+        <div class="col-md-7">
+          <h4><i class="material-icons">toc</i> Overview</h4>
+          <p class="lead">This site provides activities based on scientific data.</p>
+          <p>This site is <i>not</i> meant to be a fully
+          comprehensive tutorial. The ideal student will have
+          learned the basic concepts elsewhere (classroom setting,
+          mentor, independent study) and then will use these
+          activities to test their understanding of the concepts
+          and to develop some sense of how "real scientists" are
+          doing this work in the field.</p>
+          <p>These activities are built around <a href=
+          "https://www.python.org/" target="_blank" class=
+          "text-danger">the Python programming language</a>,
+          specifically the <a href=
+          "http://ipython.org/notebook.html" target="_blank" class=
+          "text-danger">the iPython notebook</a>. Anyone who uses
+          these activities should familiarize themselves with both
+          of these products.</p>
+          <p>Have fun!</p>
+        </div>
+        <div class="col-md-5">
+          <h4><i class="material-icons">link</i> Links</h4>
+          <ul class="nav nav-pills flex-column">
+            <li>
+              <a href="https://www.python.org/" target="_blank"
+              class="list-group-item list-group-item-danger">Python
+              Programming Language</a>
+            </li>
+            <li>
+              <a href="http://ipython.org/notebook.html" target=
+              "_blank" class=
+              "list-group-item list-group-item-danger">iPython
+              Notebooks</a>
+            </li>
+          </ul>
+          <hr>
+          <p><img src="img/bg1.jpg" alt="Compact Muon Solenoid"
+          class="img-fluid"></p>
+          <p><small>CMS (Compact Muon Solenoid) at CERN</small></p>
+        </div>
+      </div>
+    </div>
+  </div--><!-- FAQ Section -->
+  <!--hr-->
+  <!--div id="faq">
+    <div class="card text-center text-white" style=
+    "background-color: #f36447">
+      <h2 class="card-header bg-orange text-center"><i class=
+      "material-icons">help_outline</i>FAQ</h2>
+    </div>
+    <p><b>How do I fix the error saying that there is no module
+    pps_tools?</b><br>
+    To fix this error, first, make sure that your <b>Runtime</b> is
+    set to Python 3, then go up to <b>Runtime</b> a the top menu
+    and select <i>Restart runtime</i>. In general, most problems
+    that don't have to do with your code itself can be solved by
+    restarting the runtime!</p><br>
+    <p><b>Where to find the answer keys if you have finished the
+    activities?</b><br>
+    Email <a href=
+    "https://www.siena.edu/faculty-and-staff/profile/bellis">Matt
+    Bellis</a>!</p><br>
+    <p><b>Which tutorial should I start with?</b><br>
+    'Using Colab for the first time' is the place to start if this
+    is indeed your first time here! We suggest watching all the
+    videos though, to get an in-depth explanation of all the tools
+    you will be using.</p><br>
+    <p><b>Which activity should I start with?</b><br>
+    We recommend you start with the GPS satellite tutorial, as it
+    introduces importing the data from the tutorial tarball.</p><br>
+    <p><b>I've finished all the activities. What more can I
+    do?</b><br>
+    We are in the planning stages of implementing more activities
+    to the website. Don't fret, more is on the way!</p>
+    <p><b>I'm running locally and my tools dont seem to be
+    working</b><br>
+    Chances are your tools are outdated. Try updating them by
+    pulling from the Github site, and running the `setup.py
+    install` command from the conda terminal again.</p>
+  </div-->
+  <!--hr-->
+  <!-- About section -->
+  <div id="contributors" class="featurette">
+    <div class="container">
+      <h2><i class="material-icons">group</i> Contributors<br>
+      <small><i class="material-icons">mail</i> Send any questions
+      or comments to <a href=
+      "mailto:richard.t.jones@uconn.edu">Richard
+      Jones</a></small></h2>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <h4>Institutions</h4>
+          <p><a href="https://www.uconn.edu/" target=
+          "_blank">University of Connecticut</a><br>
+          <a href="https://www.nsf.gov/dir/index.jsp?org=CISE"
+          target="_blank">US National Science Foundation</a></p>
+        </div>
+        <div class="col-md-6">
+          <h4>Individuals</h4>
+          <p><a href="mailto:eric.habjan@uconn.edu">Eric
+          Habjan</a><br>
+          <a href="mailto:richard.t.jones@uconn.edu">Richard
+          Jones</a><br></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <!-- Footer  -->
+  <footer style="color: white;">
+    <div class="container">
+      <p class="text-center"><span class="brand-color">UConn Data
+      Science Tutorials ©2022</span></p>
+      <p class="text-center"><i>This work is supported by the U.S.
+      National Science Foundation under grant 1925716</i></p>
+    </div>
+  </footer><!-- Google analytics -->
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+     
+     ga('create', 'UA-73715548-1', 'auto');
+     ga('send', 'pageview');
+     
+  </script> <!-- script references -->
+   
+  <script src=
+  "https://code.jquery.com/jquery-3.2.1.slim.min.js"></script> 
+  <script src=
+  "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  
+  <script src=
+  "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
