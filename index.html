@@ -99,6 +99,14 @@
                 individual tutorial activities listed below to
                 download the zipped images containing the tutorial
                 data and ipython (jupyter) notebook prototype.</li>
+		<li>Find the downloaded image in your Downloads
+		directory and strip off the .docx extension from the
+		end of the image filename. The extra .docx was
+		added to evade the "safe-browsing" download blocker
+		built into recent releases of chrome and firefox
+		that is designed to protect you from self-harm. 
+		These notebook images do not contain malware, as
+		you may verify by an antivirus scan.
                 <li>Use a desktop tool to unpack the tutorial image
                 into a directory on your local machine.</li>
                 <li>Choose whether you want to run the notebook
@@ -125,7 +133,7 @@
   </div>
   <div class="card text-center text-white" style=
   "padding-top: 20px; background-color: #222334;" id="activities">
-    <div class="card-body">
+    <div class="card-body" style="font-size: 24px;">
       ACTIVITIES
     </div>
   </div>
@@ -146,10 +154,24 @@
 	the time delay that measures the relative distance between the satellite and the
 	receiver. You will know when you have succeeded when you are able to detect the
 	unique hidden messages embedded in the signals from each satellite!</p>
-	<a href="tutorial_1.zip" target="_blank" class= "btn btn-primary btn-block"
-		style="width:150px;">zip file</a>
-	<a href="tutorial_1.tar.gz" target="_blank" class= "btn btn-secondary btn-block"
-		style="width:150px;">tarball</a>
+	<a href="http://cn440.storrs.hpc.uconn.edu:2880/tutorials/tutorial_1.zip.docx"
+	   class= "btn btn-primary btn-block" style="width:150px;"
+           onclick="download_popup(1)">zip file</a>
+	<div class="popup">
+	   <span class="popuptext" id="popup_1">To download this file, right-click on the
+		   link and select Copy Link Address, then open a new browser tab and paste
+		   it into the url bar.
+           </span>
+	</div>
+	<a href="http://cn440.storrs.hpc.uconn.edu:2880/tutorials/tutorial_1.tar.gz.docx"
+	   class= "btn btn-secondary btn-block" style="width:150px; margin-top: -15px"
+	   onclick="download_popup(2)">tarball</a>
+	<div class="popup">
+	   <span class="popuptext" id="popup_2">To download this file, right-click on the
+		   link and select Copy Link Address, then open a new browser tab and paste
+		   it into the url bar.
+           </span>
+	</div>
       </div>
     </div>
     <div class="card card border-danger" style="min-width: 100%;">
@@ -169,10 +191,24 @@
 	from their period. Analysis of these data will allow you to discover the fact that
 	the universe is expanding, and measure its present expansion rate known as the
 	Hubble constant.</p>
-	<a href="tutorial_2.zip" target="_blank" class= "btn btn-primary btn-block"
-		style="width:150px;">zip file</a>
-	<a href="tutorial_2.tar.gz" target="_blank" class= "btn btn-secondary btn-block"
-		style="width:150px;">tarball</a>
+	<a href="http://cn440.storrs.hpc.uconn.edu:2880/tutorials/tutorial_2.zip.docx"
+	   class="btn btn-primary btn-block" style="width:150px;"
+	   onclick="download_popup(3)">zip file</a>
+	<div class="popup">
+	   <span class="popuptext" id="popup_3">To download this file, right-click on the
+		   link and select Copy Link Address, then open a new browser tab and paste
+		   it into the url bar.
+           </span>
+	</div>
+	<a href="http://cn440.storrs.hpc.uconn.edu:2880/tutorials/tutorial_2.tar.gz.docx"
+	   class= "btn btn-secondary btn-block" style="width:150px; margin-top:-15px;"
+	   onclick="download_popup(4)">tarball</a>
+	<div class="popup">
+	   <span class="popuptext" id="popup_4">To download this file, right-click on the
+		   link and select Copy Link Address, then open a new browser tab and paste
+		   it into the url bar.
+           </span>
+	</div>
       </div>
     </div>
     <div class="card card border-danger" style="min-width: 100%;">
@@ -198,10 +234,24 @@
 	from the library. One of the challenges in this activity is common to many
 	problems in data science, and that is finding expected patterns in a signal
 	that contains a significant amount of noise.</p>
-	<a href="tutorial_3.zip" target="_blank" class= "btn btn-primary btn-block"
-		style="width:150px;">zip file</a>
-	<a href="tutorial_3.tar.gz" target="_blank" class= "btn btn-secondary btn-block"
-		style="width:150px;">tarball</a>
+	<a href="http://cn440.storrs.hpc.uconn.edu:2880/tutorials/tutorial_3.zip.docx"
+	   class= "btn btn-primary btn-block" style="width:150px;"
+	   onclick="download_popup(5)">zip file</a>
+	<div class="popup">
+	   <span class="popuptext" id="popup_5">To download this file, right-click on the
+		   link and select Copy Link Address, then open a new browser tab and paste
+		   it into the url bar.
+           </span>
+	</div>
+	<a href="http://cn440.storrs.hpc.uconn.edu:2880/tutorials/tutorial_3.tar.gz.docx"
+	   class= "btn btn-secondary btn-block" style="width:150px; margin-top:-15px;"
+	   onclick="download_popup(6)">tarball</a>
+	<div class="popup">
+	   <span class="popuptext" id="popup_6">To download this file, right-click on the
+		   link and select Copy Link Address, then open a new browser tab and paste
+		   it into the url bar.
+           </span>
+	</div>
       </div>
     </div>
   </div>
@@ -225,7 +275,7 @@
           "https://www.python.org/" target="_blank" class=
           "text-danger">the Python programming language</a>,
           specifically the <a href=
-          "http://ipython.org/notebook.html" target="_blank" class=
+          "https://ipython.org/notebook.html" target="_blank" class=
           "text-danger">the iPython notebook</a>. Anyone who uses
           these activities should familiarize themselves with both
           of these products.</p>
@@ -240,7 +290,7 @@
               Programming Language</a>
             </li>
             <li>
-              <a href="http://ipython.org/notebook.html" target=
+              <a href="https://ipython.org/notebook.html" target=
               "_blank" class=
               "list-group-item list-group-item-danger">iPython
               Notebooks</a>
@@ -346,5 +396,13 @@
   
   <script src=
   "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+  <script>
+  function download_popup(popid) {
+    var popup = document.getElementById(`popup_${popid}`);
+    console.log(`popup_${popid}`);
+    popup.classList.toggle("show");
+  }
+  </script>
 </body>
 </html>
